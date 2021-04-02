@@ -1,0 +1,3 @@
+// GLobals - no window remember!
+
+//
