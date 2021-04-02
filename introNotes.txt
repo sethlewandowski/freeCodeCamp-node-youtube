@@ -1,0 +1,20 @@
+NodeJS
+- Environment to run js outside browser
+- built on chromes V8 JS engine
+- Big Community
+- Full Stack
+- No DOM
+- No Window
+- Server Side Apps
+- Filesystem access
+- Versions
+- CommonJS
+
+REPL vs. CLI
+- REPL for playing around. CLI for everything else. 
+
+REPL
+- type node and hit enter and you get the > 
+- Can do the same in browser console or with python 
+
+CLI

@@ -1,0 +1,19 @@
+user sends http requ
+server sends http resp
+
+Express is a framework
+
+server is a computer which has a specific job.( no gui )
+- makes sure resources are always available. 
+
+Request Message (What USER sends)
+- Method (get, post, put, delete)
+- URL ()
+- Headers (meta info about request) (key value pairs)
+- Body (optional) (request payload)
+
+Response Message (what SERVER sends)
+- status text (OK)
+- status code (200) (400 error) (401)
+- Headers (content-type: application/json)
+- Body

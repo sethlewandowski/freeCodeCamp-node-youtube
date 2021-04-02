@@ -1,0 +1,6 @@
+allows Node to perform non-blocking I/O operations by offloading operations to the system kernel whenever possible. 
+
+JS is synchronous and single threaded 
+
+all async gets offloaded to the queue to wait until the callback is ready to enter the loop again.
+

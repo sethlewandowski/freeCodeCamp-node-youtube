@@ -1,0 +1,3 @@
+Events 
+- event driven programming (flow of program is determined by events)
+- used heavily in node.js
