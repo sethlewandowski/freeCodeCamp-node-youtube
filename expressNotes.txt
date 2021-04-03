@@ -1,0 +1,11 @@
+API v SSR
+
+API
+- Sent in json
+- send data
+res.json() method
+
+SSR
+- send template
+- send back entire html, css, js ourselves
+- res.render() method
