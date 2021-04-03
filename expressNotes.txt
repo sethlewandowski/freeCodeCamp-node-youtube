@@ -9,3 +9,18 @@ SSR
 - send template
 - send back entire html, css, js ourselves
 - res.render() method
+
+req.query can find anything after the ? in the url
+ex.
+github.com/api/v1/users?location=scottsdale
+
+const {location} = req.query 
+console.log(location) // scottsdale
+
+
+req.params can find anything that is meant to be a variable in the url 
+ex.
+github.com/api/v1/users/sethlewandowski
+
+const { userID } = req.params
+console.log(userID) // sethlewandowski

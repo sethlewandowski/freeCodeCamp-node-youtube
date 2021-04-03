@@ -30,6 +30,11 @@ app.get('/api/products/:productID/reviews/:reviewID', (req, res) => {
   res.send(req.params)
 })
 
+app.get('/api/v1/query', (req, res) => {
+  console.log(req.query)
+  res.json('hello world')
+})
+
 app.listen(5000, () => {
   console.log('server listening on port 5000')
 })
