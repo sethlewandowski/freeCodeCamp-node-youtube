@@ -45,7 +45,8 @@ app.get('/api/v1/query', (req, res) => {
   }
 
   sortedProducts.length === 0
-    ? res.status(200).send('no products matched your criteria.')
+    ? //res.status(200).send('no products matched your criteria.')
+      res.status(200).json({ success: true, data: [] })
     : res.status(200).json(sortedProducts)
 })
 
