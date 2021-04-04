@@ -1,20 +1,16 @@
 const express = require('express')
 const app = express()
+const logger = require('./logger')
 
-const logger = (req, res, next) => {
-  const method = req.method
-  const url = req.url
-  const time = new Date().getMonth()
-  console.log(method, url, time)
-  next()
-}
+// all requests through logger middleware
+// order matters, this must be before routes you want to apply to
+app.use(logger)
 
-// req => middleware => res
-app.get('/', logger, (req, res) => {
+app.get('/', (req, res) => {
   res.send('home')
 })
 
-app.get('/about', logger, (req, res) => {
+app.get('/about', (req, res) => {
   res.send('about')
 })
 
