@@ -1,16 +1,18 @@
 const express = require('express')
 const app = express()
 const logger = require('./logger')
+const authorize = require('./authorize')
 
 // all requests through logger middleware
 // order matters, this must be before routes you want to apply to
-app.use(logger)
+//app.use([logger, authorize])
 
 app.get('/', (req, res) => {
   res.send('home')
 })
 
-app.get('/about', (req, res) => {
+app.get('/about', [logger, authorize], (req, res) => {
+  console.log(req.user)
   res.send('about')
 })
 
